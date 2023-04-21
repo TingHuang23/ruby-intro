@@ -15,3 +15,36 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+
+###this is your practice and its not correct
+shared_shoppinglist = [["milk","eggs","bacon"],["beer","cookies","apples"]]
+shared_shoppinglist[0].sort!
+shared_shoppinglist[1].sort!
+
+#puts "buy #{shared_shoppinglist}"
+
+##this is professor's answer
+#step1-create array
+bens_list = ["milk","eggs","bacon","apples"]
+brians_list = ["beer","cookies","apples"]
+
+#step2-combine list
+combined_list = bens_list + brians_list
+
+#step3-sort list
+sorted_list = combined_list.sort
+#puts sorted_list.inspect
+
+#step4-make a unique list
+sorted_unique_list = sorted_list.uniq
+
+#step5-final result
+puts "buy #{sorted_unique_list.inspect}"
+puts "buy #{sorted_unique_list[0]}"
+puts "buy #{sorted_unique_list[1]}"
+puts "buy #{sorted_unique_list[2]}"
+puts "buy #{sorted_unique_list[3]}"
+puts "buy #{sorted_unique_list[4]}"
+puts "buy #{sorted_unique_list[5]}"
+puts "buy #{sorted_unique_list[6]}"
